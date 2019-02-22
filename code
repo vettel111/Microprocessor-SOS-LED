@@ -1,0 +1,47 @@
+int led1=6;
+int led2=4;
+int led3=2;
+int buzzer=8;
+void setup() {
+pinMode(led1,OUTPUT);
+pinMode(led2,OUTPUT);
+pinMode(led3,OUTPUT);
+pinMode(buzzer,OUTPUT);
+}
+
+void loop() {
+for (int x=0;x<3;x++){
+  digitalWrite(led1,HIGH);
+  digitalWrite(buzzer,HIGH);
+  delay(150);
+  digitalWrite(led1,LOW);
+  digitalWrite(buzzer,LOW);
+  delay(150);
+}
+delay(500);
+
+for (int x=0;x<3;x++){
+  digitalWrite(led2,HIGH);
+  digitalWrite(buzzer,HIGH);
+  delay(500);
+  digitalWrite(led2,LOW);
+  digitalWrite(buzzer,LOW);
+  delay(500);
+}
+delay(150);
+
+for (int x=0;x<3;x++){
+  digitalWrite(led3,HIGH);
+  digitalWrite(buzzer,HIGH);
+  delay(150);
+  digitalWrite(led3,LOW);
+  digitalWrite(buzzer,LOW);
+  delay(150);
+}
+delay(500);
+
+
+
+
+
+}
